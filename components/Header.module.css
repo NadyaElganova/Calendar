@@ -1,0 +1,9 @@
+.header {
+    background-color: lightcyan;
+    padding: 10px;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
