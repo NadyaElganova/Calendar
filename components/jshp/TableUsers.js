@@ -8,7 +8,7 @@ import {
     Heading
   } from '@chakra-ui/react'
 
-export default function TableUsers({data}){
+export default function TableUsers({data, deleteUser}){
         return <>
             <ChakraProvider>
                     <Heading as='h3' size='lg'>Users:</Heading>
@@ -17,7 +17,7 @@ export default function TableUsers({data}){
                         <TableHeader/>
                         <Tbody>
                             {data.map((user) => (
-                                <TableRow key={user.id} user={user}/>
+                                <TableRow key={user.id} user={user} deleteUser={deleteUser}/>
                             ))}
                         </Tbody>
                     </Table>

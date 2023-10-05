@@ -21,7 +21,11 @@ export default function FetchUsersTable(){
         fetchData();
     }, []);
 
+    const handlerDeleteUser = (id)=>{       
+       setData((oldData)=>oldData.filter(element=>element.id!=id));
+    }
+
     if(error) return <h2 style={{color:'red'}}>{error.toString()}</h2>
-    if(data) return <TableUsers data={data}/>
+    if(data) return <TableUsers data={data} deleteUser={handlerDeleteUser}/>
     return <Spinner/>
 }
