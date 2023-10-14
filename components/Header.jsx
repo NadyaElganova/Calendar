@@ -6,7 +6,8 @@ const pages = [
     {href: '/test-users', title: 'Test fetch'},
     {href: '/users', title: 'Users'},
     {href: '/table', title: 'Table users'},
-    {href: '/calendar', title: 'Calendar'}
+    {href: '/calendar', title: 'Calendar'},
+    {href: '/films', title: 'Films'}
 ]
 
 export default function Header(){
